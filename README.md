@@ -1,7 +1,5 @@
 # IHP__QDLL6501
 
-# UNIC-CASS-WRAPPER 
-
 ## 💬 Team & Acknowledgements
 
 This project was developed by students from Fulgor Foundation as part of the UNIC-CASS open-source tapeout program.
