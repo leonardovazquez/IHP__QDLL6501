@@ -1,0 +1,72 @@
+** sch_path: /home/designer/shared/2026/Cells/DLine.sch
+.subckt DLINE VSS VDD VIN VOUT
+*.PININFO VOUT:O VIN:I VDD:B VSS:B
+x2 net1 net4 VDD VSS sg13g2_inv_4
+x3 net2 net1 VDD VSS sg13g2_inv_8
+x4 VOUT net2 VDD VSS sg13g2_inv_16
+x5 net3 VIN VDD VSS sg13g2_dlygate4sd3_1
+x6 net4 net3 VDD VSS sg13g2_dlygate4sd2_1
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_dlygate4sd3_1
+* View name: schematic
+.subckt sg13g2_dlygate4sd3_1 X A VDD VSS
+MP3 X net3 VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1 ad=3.808e-13 as=3.808e-13 pd=2.92e-06 ps=2.92e-06 m=1
+MP2 net3 net2 VDD VDD sg13_lv_pmos w=1.000u l=500.0n ng=1 ad=3.4e-13 as=3.4e-13 pd=2.68e-06 ps=2.68e-06 m=1
+MP1 net2 net1 VDD VDD sg13_lv_pmos w=1.000u l=500.0n ng=1 ad=3.4e-13 as=3.4e-13 pd=2.68e-06 ps=2.68e-06 m=1
+MP0 net1 A VDD VDD sg13_lv_pmos w=420.00n l=130.00n ng=1 ad=1.428e-13 as=1.428e-13 pd=1.52e-06 ps=1.52e-06 m=1
+MN3 X net3 VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=2.516e-13 as=2.516e-13 pd=2.16e-06 ps=2.16e-06 m=1
+MN2 net3 net2 VSS VSS sg13_lv_nmos w=420.00n l=500.0n ng=1 ad=1.428e-13 as=1.428e-13 pd=1.52e-06 ps=1.52e-06 m=1
+MN1 net2 net1 VSS VSS sg13_lv_nmos w=420.00n l=500.0n ng=1 ad=1.428e-13 as=1.428e-13 pd=1.52e-06 ps=1.52e-06 m=1
+MN0 net1 A VSS VSS sg13_lv_nmos w=420.00n l=130.00n ng=1 ad=1.428e-13 as=1.428e-13 pd=1.52e-06 ps=1.52e-06 m=1
+.ends
+* End of subcircuit definition.
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_dlygate4sd2_1
+* View name: schematic
+.subckt sg13g2_dlygate4sd2_1 X A VDD VSS
+MP3 X net3 VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1 ad=3.808e-13 as=3.808e-13 pd=2.92e-06 ps=2.92e-06 m=1
+MP2 net3 net2 VDD VDD sg13_lv_pmos w=1.000u l=250.00n ng=1 ad=3.4e-13 as=3.4e-13 pd=2.68e-06 ps=2.68e-06 m=1
+MP1 net2 net1 VDD VDD sg13_lv_pmos w=1.000u l=250.00n ng=1 ad=3.4e-13 as=3.4e-13 pd=2.68e-06 ps=2.68e-06 m=1
+MP0 net1 A VDD VDD sg13_lv_pmos w=420.00n l=130.00n ng=1 ad=1.428e-13 as=1.428e-13 pd=1.52e-06 ps=1.52e-06 m=1
+MN3 X net3 VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=2.516e-13 as=2.516e-13 pd=2.16e-06 ps=2.16e-06 m=1
+MN2 net3 net2 VSS VSS sg13_lv_nmos w=420.00n l=180.00n ng=1 ad=1.428e-13 as=1.428e-13 pd=1.52e-06 ps=1.52e-06 m=1
+MN1 net2 net1 VSS VSS sg13_lv_nmos w=420.00n l=180.00n ng=1 ad=1.428e-13 as=1.428e-13 pd=1.52e-06 ps=1.52e-06 m=1
+MN0 net1 A VSS VSS sg13_lv_nmos w=420.00n l=130.00n ng=1 ad=1.428e-13 as=1.428e-13 pd=1.52e-06 ps=1.52e-06 m=1
+.ends
+* End of subcircuit definition.
+
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_inv_4
+* View name: schematic
+.subckt sg13g2_inv_4 Y A VDD VSS
+MP0 Y A VDD VDD sg13_lv_pmos w=4.48u l=130.00n ng=4 ad=8.512e-13 as=1.187e-12 pd=6e-06 ps=8.84e-06 m=1
+MN0 Y A VSS VSS sg13_lv_nmos w=2.96u l=130.00n ng=4 ad=5.624e-13 as=7.844e-13 pd=4.48e-06 ps=6.56e-06 m=1
+.ends
+* End of subcircuit definition.
+
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_inv_8
+* View name: schematic
+.subckt sg13g2_inv_8 Y A VDD VSS
+MN1 Y A VSS VSS sg13_lv_nmos w=5.92u l=130.00n ng=8 ad=1.125e-12 as=1.347e-12 pd=8.96e-06 ps=1.104e-05 m=1
+MP0 Y A VDD VDD sg13_lv_pmos w=8.96u l=130.00n ng=8 ad=1.702e-12 as=2.038e-12 pd=1.2e-05 ps=1.484e-05 m=1
+.ends
+* End of subcircuit definition.
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_inv_16
+* View name: schematic
+.subckt sg13g2_inv_16 Y A VDD VSS
+MN1 Y A VSS VSS sg13_lv_nmos w=11.84u l=130.00n ng=16 ad=2.25e-12 as=2.472e-12 pd=1.792e-05 ps=2e-05 m=1
+MP0 Y A VDD VDD sg13_lv_pmos w=17.92u l=130.00n ng=16 ad=3.405e-12 as=3.741e-12 pd=2.4e-05 ps=2.684e-05 m=1
+.ends
+* End of subcircuit definition.
+
+
+
+
+.ends

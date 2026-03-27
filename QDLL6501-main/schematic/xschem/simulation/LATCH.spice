@@ -1,0 +1,15 @@
+** sch_path: /foss/designs/DLL/2026/Cells/LATCH.sch
+.subckt LATCH VSS V1 VDD V2
+*.PININFO VDD:B VSS:B V1:B V2:B
+x1 V2 V1 VDD VSS sg13g2_inv_1
+x2 V1 V2 VDD VSS sg13g2_inv_1
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_inv_1
+* View name: schematic
+.subckt sg13g2_inv_1 Y A VDD VSS
+MN1 Y A VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=2.516e-13 as=2.516e-13 pd=2.16e-06 ps=2.16e-06 m=1
+MP0 Y A VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1 ad=3.808e-13 as=3.808e-13 pd=2.92e-06 ps=2.92e-06 m=1
+.ends
+* End of subcircuit definition.
+.ends

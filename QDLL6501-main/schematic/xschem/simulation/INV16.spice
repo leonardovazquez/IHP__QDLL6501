@@ -1,0 +1,16 @@
+** sch_path: /foss/designs/DLL/2026/Cells/INV16.sch
+.subckt INV16 VDD VSS VIN VOUT
+*.PININFO VDD:B VSS:B VIN:I VOUT:O
+x4 VOUT VIN VDD VSS sg13g2_inv_16
+
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_inv_16
+* View name: schematic
+.subckt sg13g2_inv_16 Y A VDD VSS
+MN1 Y A VSS VSS sg13_lv_nmos w=11.84u l=130.00n ng=16 ad=2.25e-12 as=2.472e-12 pd=1.792e-05 ps=2e-05 m=1
+MP0 Y A VDD VDD sg13_lv_pmos w=17.92u l=130.00n ng=16 ad=3.405e-12 as=3.741e-12 pd=2.4e-05 ps=2.684e-05 m=1
+.ends
+* End of subcircuit definition.
+
+.ends

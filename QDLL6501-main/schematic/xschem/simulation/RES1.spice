@@ -1,0 +1,8 @@
+** sch_path: /home/designer/shared/2026/Cells/RES.sch
+.subckt RES1 ROUT RIN
+*.PININFO RIN:I ROUT:O
+R1 net1 RIN rppd w=1e-6 l=10e-6 m=1 b=0
+R3 net2 net1 rppd w=1e-6 l=10e-6 m=1 b=0
+R4 net3 net2  rppd w=1e-6 l=10e-6 m=1 b=0
+R5 ROUT net3 rppd w=1e-6 l=10e-6 m=1 b=0
+.ends
