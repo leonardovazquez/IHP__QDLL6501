@@ -68,7 +68,6 @@ C {opin.sym} 440 -640 0 0 {name=p11 lab=OUT1}
 C {opin.sym} 460 340 0 0 {name=p12 lab=OUT2}
 C {opin.sym} 290 580 3 0 {name=p9 lab=CPOUT2}
 C {ipin.sym} -170 480 0 0 {name=p10 lab=VCONT2}
-C {Cells/DLine.sym} 0 -10 0 0 {name=x3}
 C {lab_wire.sym} 0 -100 0 0 {name=p13 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 0 100 0 0 {name=p14 sig_type=std_logic lab=VSS}
 C {opin.sym} 180 -10 0 0 {name=p15 lab=OUT3}
@@ -80,10 +79,6 @@ C {lab_pin.sym} -100 -540 2 0 {name=p20 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 130 -210 2 0 {name=p21 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} -120 -210 2 0 {name=p22 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} -120 -440 2 0 {name=p23 sig_type=std_logic lab=VDD}
-C {Cells/DLine.sym} 160 -640 0 0 {name=x4}
-C {Cells/VCDL.sym} -140 -640 0 0 {name=x5}
-C {Cells/CP.sym} 130 -330 0 0 {name=x6}
-C {Cells/PD.sym} -120 -330 0 0 {name=x7}
 C {lab_pin.sym} 170 440 2 0 {name=p24 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 170 240 2 0 {name=p25 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} -130 240 2 0 {name=p26 sig_type=std_logic lab=VDD}
@@ -91,7 +86,12 @@ C {lab_pin.sym} -90 440 2 0 {name=p27 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 140 770 2 0 {name=p28 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} -110 770 2 0 {name=p29 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} -110 540 2 0 {name=p30 sig_type=std_logic lab=VDD}
-C {Cells/DLine.sym} 170 340 0 0 {name=x1}
-C {Cells/VCDL.sym} -130 340 0 0 {name=x8}
-C {Cells/CP.sym} 140 650 0 0 {name=x9}
-C {Cells/PD.sym} -110 650 0 0 {name=x10}
+C {IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/schematic/xschem/VCDL.sym} -140 -640 0 0 {name=x2}
+C {IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/schematic/xschem/VCDL.sym} -130 340 0 0 {name=x5}
+C {IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/schematic/xschem/DLine.sym} 170 340 0 0 {name=x1}
+C {IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/schematic/xschem/DLine.sym} 0 -10 0 0 {name=x3}
+C {IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/schematic/xschem/DLine.sym} 160 -640 0 0 {name=x4}
+C {IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/schematic/xschem/PD.sym} -110 650 0 0 {name=x6}
+C {IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/schematic/xschem/PD.sym} -120 -330 0 0 {name=x7}
+C {IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/schematic/xschem/CP.sym} 130 -330 0 0 {name=x8}
+C {IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/schematic/xschem/CP.sym} 140 650 0 0 {name=x9}
