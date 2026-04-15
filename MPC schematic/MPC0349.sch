@@ -106,14 +106,14 @@ N 2240 -1500 2270 -1500 {lab=IOVSS3}
 N 2240 -1460 2270 -1460 {lab=IOVDD3}
 N 2240 -1420 2270 -1420 {lab=#net2}
 N 2240 -1100 2270 -1100 {lab=#net3}
-N 1260 -760 1340 -760 {lab=analog_io_padres[15]}
-N 1260 -720 1340 -720 {lab=analog_io_padres[17]}
+N 1260 -760 1340 -760 {lab=analog_io[15]}
+N 1260 -720 1340 -720 {lab=#net4}
 N 1260 -680 1340 -680 {lab=analog_io_padres[14]}
 N 880 -760 960 -760 {lab=analog_io_padres[10]}
 N 880 -720 960 -720 {lab=analog_io_padres[16]}
 N 880 -680 960 -680 {lab=analog_io_padres[11]}
 N 1030 -620 1030 -570 {lab=analog_io_padres[12]}
-N 1180 -620 1180 -570 {lab=analog_io_padres[13]}
+N 1180 -620 1180 -570 {lab=analog_io[13]}
 N 2240 -1380 2270 -1380 {lab=analog_io[25]}
 N 2240 -1260 2270 -1260 {lab=analog_io[22]}
 N 2240 -1140 2270 -1140 {lab=analog_io[19]}
@@ -133,13 +133,13 @@ N 1360 0 1360 80 {lab=IOVSS2}
 N 1110 -880 1110 -820 {lab=VDD3}
 N 1040 -360 1040 -300 {lab=analog_io_padres[11]}
 N 1080 -360 1080 -300 {lab=analog_io_padres[12]}
-N 1120 -360 1120 -300 {lab=#net4}
-N 1160 -360 1160 -300 {lab=analog_io_padres[14]}
-N 1200 -360 1200 -300 {lab=analog_io_padres[15]}
+N 1120 -360 1120 -300 {lab=#net5}
 N 1240 -360 1240 -300 {lab=analog_io_padres[16]}
-N 1280 -360 1280 -300 {lab=analog_io_padres[17]}
+N 1280 -360 1280 -300 {lab=#net6}
 N 1000 -360 1000 -300 {lab=analog_io_padres[10]}
 N 1110 -620 1110 -570 {lab=VSS2}
+N 1200 -360 1200 -300 {lab=#net7}
+N 1160 -360 1160 -300 {lab=#net8}
 C {user_project_wrapper.sym} 0 0 0 0 {name=x1}
 C {IHP__MPC0349/dependencies/IHP__OSC3593/OSC3593-main/schematic/xschem/555.sym} 790 -1300 0 0 {name=x2}
 C {IHP__MPC0349/dependencies/IHP__OPA2251/OPA2251-main/schematic/xschem/HPA.sym} 1400 -1110 0 0 {name=x3}
@@ -242,19 +242,19 @@ C {lab_wire.sym} 1280 80 3 0 {name=p91 sig_type=std_logic lab=analog_io[17]	}
 C {lab_pin.sym} 1000 -310 1 0 {name=p111 sig_type=std_logic lab=analog_io_padres[10]}
 C {lab_pin.sym} 1040 -310 1 0 {name=p112 sig_type=std_logic lab=analog_io_padres[11]}
 C {lab_pin.sym} 1080 -310 1 0 {name=p113 sig_type=std_logic lab=analog_io_padres[12]}
-C {lab_pin.sym} 1130 -310 1 0 {name=p114 sig_type=std_logic lab=analog_io_padres[13]}
-C {lab_pin.sym} 1340 -680 2 0 {name=p115 sig_type=std_logic lab=analog_io_padres[14]}
-C {lab_pin.sym} 1200 -310 1 0 {name=p116 sig_type=std_logic lab=analog_io_padres[15]}
+C {lab_pin.sym} 1340 -680 2 0 {name=p115 sig_type=std_logic lab=analog_io[14]}
 C {lab_pin.sym} 1240 -310 1 0 {name=p117 sig_type=std_logic lab=analog_io_padres[16]}
-C {lab_pin.sym} 1280 -310 1 0 {name=p118 sig_type=std_logic lab=analog_io_padres[17]}
 C {lab_pin.sym} 880 -760 0 0 {name=p92 sig_type=std_logic lab=analog_io_padres[10]}
 C {lab_pin.sym} 880 -680 0 0 {name=p93 sig_type=std_logic lab=analog_io_padres[11]}
 C {lab_pin.sym} 1030 -570 0 0 {name=p94 sig_type=std_logic lab=analog_io_padres[12]}
-C {lab_pin.sym} 1180 -570 2 0 {name=p95 sig_type=std_logic lab=analog_io_padres[13]}
+C {lab_pin.sym} 1180 -570 2 0 {name=p95 sig_type=std_logic lab=analog_io[13]}
 C {lab_wire.sym} 1110 -580 2 1 {name=p96 sig_type=std_logic lab=VSS2}
 C {lab_wire.sym} 1110 -880 2 1 {name=p97 sig_type=std_logic lab=VDD3}
-C {lab_pin.sym} 1160 -310 1 0 {name=p98 sig_type=std_logic lab=analog_io_padres[14]}
-C {lab_pin.sym} 1340 -760 2 0 {name=p99 sig_type=std_logic lab=analog_io_padres[15]}
+C {lab_pin.sym} 1340 -760 2 0 {name=p99 sig_type=std_logic lab=analog_io[15]}
 C {lab_pin.sym} 880 -720 0 0 {name=p100 sig_type=std_logic lab=analog_io_padres[16]}
-C {lab_pin.sym} 1340 -720 2 0 {name=p101 sig_type=std_logic lab=analog_io_padres[17]}
+C {lab_pin.sym} 1350 -720 2 0 {name=p101 sig_type=std_logic lab=analog_io[17]}
 C {lab_wire.sym} 960 80 3 0 {name=p102 sig_type=std_logic lab=ui_PAD[9]	}
+C {noconn.sym} 1160 -360 1 0 {name=l2}
+C {noconn.sym} 1200 -360 1 0 {name=l3}
+C {noconn.sym} 1280 -360 1 0 {name=l5}
+C {noconn.sym} 1120 -360 1 0 {name=l6}
